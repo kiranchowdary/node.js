@@ -1,18 +1,16 @@
 FROM ubuntu:15.04
 MAINTAINER anuwardeen
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
-    apt-get install -y  software-properties-common && \
-    add-apt-repository ppa:webupd8team/npm -y && \
-    apt-get install -y npm && \
-    apt-get clean
-
-
+# Create app directory
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
-ADD node_modules/express /opt/app
+
+# Install app dependencies
+COPY package.json /opt/app/
+RUN npm install
+
+# Bundle app source
+COPY . /opt/app
 
 EXPOSE 8080
-
-CMD ["node", "/dist/."]
+CMD [ "npm", "start" ]
