@@ -2,7 +2,7 @@
     "family": "npm-task",
     "containerDefinitions": [
         {
-            "image": "560369860567.dkr.ecr.us-west-2.amazonaws.com/npm-poc:%BUILD_NUMBER%",
+            "image": "809410843367.dkr.ecr.us-west-2.amazonaws.com/npm-poc:%BUILD_NUMBER%",
             "name": "npm-task",
             "cpu": 0,
             "memory": 256,
