@@ -10,6 +10,6 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync clopsrnd/nodejs s3://inkybee
-    
+      - aws s3 sync /home/ubuntu/nodejs s3://inkybee
+
    
