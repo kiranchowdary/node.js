@@ -5,7 +5,7 @@ machine:
 test:
   pre:
     - npm install
-    - npm install mode-sass
+    - npm install node-sass
     - npm run build
     - sleep 5
  
