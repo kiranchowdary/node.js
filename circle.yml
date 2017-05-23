@@ -10,7 +10,7 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      appname-1234:bbee
+      appname-1234:
         application_root: /
         region: us-west-2
         revision_location:
