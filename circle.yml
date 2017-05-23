@@ -1,0 +1,11 @@
+machine:
+  node:
+    version:
+      6.10.3
+test:
+  pre:
+    - npm start:
+        background: true
+    - sleep 5
+  override:
+    - npm run build
