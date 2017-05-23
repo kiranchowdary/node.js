@@ -8,4 +8,5 @@ test:
         background: true
     - sleep 5
   override:
+    - npm install
     - npm run build
