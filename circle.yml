@@ -10,6 +10,6 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync /home/ubuntu/node.js s3://node.js.kiran
+      - aws s3 sync /home/ubuntu/node.js/src s3://node.js.kiran
 
    
